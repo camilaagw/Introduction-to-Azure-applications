@@ -1,8 +1,8 @@
-# Running a python app on a VM
+# Deploying a python app on a Virtual Machine
 
 ## Creating the VM from the CLI
 
-First, login using `az login`.
+Login using `az login`.
 
 Create the VM:
 ```
