@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.DS_Store
 # C extensions
 *.so
 
@@ -93,6 +93,8 @@ ipython_config.py
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
+
+.idea/
 
 # Celery stuff
 celerybeat-schedule
