@@ -26,7 +26,7 @@ A PaaS option allowing developers to focus more on their apps than the underlyin
 - It supports multiple languages and continuous deployment.
 - While they are good for scaling, there is also a limit of up to 14 GB or 4 CPU cores on the highest tier.
 
-## When to use them?
+## What are their use cases?
 - Virtual Machines are usually better when you need control of the underlying operating system or are using custom software to support your needs
 - An app service is typically better for lightweight applications and services, especially when you don't have the need for high performance compute services. 
 
