@@ -28,5 +28,11 @@ A PaaS option allowing developers to focus more on their apps than the underlyin
 
 ## What are their use cases?
 - Virtual Machines are usually better when you need control of the underlying operating system or are using custom software to support your needs
-- An app service is typically better for lightweight applications and services, especially when you don't have the need for high performance compute services. 
+- An app service is typically better for lightweight applications and services, especially when you don't have the need for high performance compute services.
+
+## How to choose a region for a compute service?
+There are three criteria:
+- Service availability - Some services may not be available in a particular region.
+- Performance - Latency determines network service performance; are you creating resources for yourself or your end user?
+- Cost - Costs of services vary by region. If latency isn’t an issue, you might want to deploy your services in the cheapest region. 
 
