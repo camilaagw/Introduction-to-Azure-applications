@@ -1,4 +1,4 @@
-# Azure compute services
+# Lesson 2: Azure compute services
 Azure uses a hierarchical system to keep resources organized and to manage expenses:
 1. Azure Account
 2. Subscription level: Used for billing. There can be multiple per account (i.e. one for development and testing, and another for production systems)

@@ -1,4 +1,4 @@
-# Introduction to Azure development
+# Lesson 1: Introduction to Azure development
 
 Azure: Cloud computing platform with benefits such as:
 - Scalability

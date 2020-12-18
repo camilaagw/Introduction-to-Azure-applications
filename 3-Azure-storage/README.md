@@ -1,4 +1,4 @@
-# Azure Storage
+# Lesson 3: Azure Storage
 
 Azure Storage features:
 - Automated backup and recovery
@@ -25,7 +25,8 @@ The two main services covered in this lesson are:
 
 - Used for structured, relational data
 - A SQL server needs to be created to hold a database (You can hold multiple SQL databases under a single SQL server)
-- Azure SQL databases do not have a free tier option 
+
+Note that Azure SQL databases do not have a free tier option. 
 
 ## Blob Storage
 Blob storage is done inside **Azure Storage Accounts**. An Azure storage account:
@@ -36,8 +37,8 @@ Blob storage is done inside **Azure Storage Accounts**. An Azure storage account
     - Hot: Used for storing frequently accessed data
     - Cold: Used for storing infrequently accessed data and stored for at least 30 days
     - Archive: Used for storing data that will be rarely accessed and stored for at least 180 days.
-     Access time latency may be very high.
-- Offer a rule-based policy you can use to transition your data between these tiers
+     Access time latency may be very high
+- Offer a rule-based policy  to transition your data between these tiers
 
 __Blob (Binary Large Object): Data type that can store unstructured (binary) data. Generally used to store images or videos.__
 
