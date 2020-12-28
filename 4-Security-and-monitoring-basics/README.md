@@ -1,22 +1,5 @@
 # Lesson 4: Security and monitoring basics
 
-Security options in Azure:
-- Azure Active Directory: Provides single sign-on (SSO) and multi-factor authentication (MFA) capabilities, such as Sign in with Microsoft
-- App Configuration: Stores application settings in one secure location
-- Key Vault API: Stores application keys and secrets in one secure location
-- Managed Identities: A part of Azure Active Directory; This helps streamline providing an app or app user access to other Azure resources
-- Shared Access Signatures: Give external parties certain limited access (determined by you) to different Azure resources
-- Role-Based Access Controls (RBAC): Help internally manage who has access to what resources, and what they can do to said resources
-- Azure Monitor: Provides a wide range of monitoring services such as log analytics, metrics, alerts, and much more
-- Application Insights: Part of Azure Monitor; This helps monitor performance and other key metrics
-
-Besides the security options, Azure gives developers the ability to:
-- Monitor metrics, such as performance and service quotas
-- Use App-based logging
-- Send logs to storage
-- Create alerts
-There are other monitoring and logging options, such as Application Insights and Log Analytics using the Kusto query language.
-
 This lesson focuses on:
 - Azure Active Directory
 - OAuth 2.0
@@ -30,11 +13,29 @@ This lesson focuses on:
  application and identity security are a shared responsibility.
 - SaaS: The network and application shift responsibility to the cloud provider, but identity stays as a shared responsibility.
 
-Security responsibilities always stay with the cloud developer:
+Security responsibilities that always stay with the cloud developer:
 - Account and access management
 - Client endpoints
 - Data Governance and Rights Management
 To register your app and get the necessary app information for the next exercise:
+
+## Security and monitoring services in Azure
+Security options in Azure:
+- **Azure Active Directory**: Provides single sign-on (SSO) and multi-factor authentication (MFA) capabilities, such as Sign in with Microsoft
+- **App Configuration**: Stores application settings in one secure location
+- **Key Vault API**: Stores application keys and secrets in one secure location
+- **Managed Identities**: A part of Azure Active Directory; This helps streamline providing an app or app user access to other Azure resources
+- **Shared Access Signatures**: Give external parties certain limited access (determined by you) to different Azure resources
+- **Role-Based Access Controls (RBAC)**: Help internally manage who has access to what resources, and what they can do to said resources
+- **Azure Monitor**: Provides a wide range of monitoring services such as log analytics, metrics, alerts, and much more
+- **Application Insights**: Part of Azure Monitor; This helps monitor performance and other key metrics
+
+Besides the security options, Azure gives developers the ability to:
+- Monitor metrics, such as performance and service quotas
+- Use App-based logging
+- Send logs to storage
+- Create alerts
+There are other monitoring and logging options, such as Application Insights and Log Analytics using the Kusto query language.
 
 ## Oauth2 with Azure
 
