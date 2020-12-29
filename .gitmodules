@@ -1,0 +1,3 @@
+[submodule "5-Final-project"]
+	path = 5-Final-project
+	url = https://github.com/camilaagw/nd081-c1-provisioning-microsoft-azure-vms-project-starter.git
