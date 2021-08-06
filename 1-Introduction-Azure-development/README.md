@@ -36,7 +36,9 @@ Collection of servers on the internet that store and manage data, run apps, and 
 The delivery of computing services over the cloud by using a pay-as-you-go pricing model. These services include servers, storage, databases, networking,
 software, analytics, and intelligence
 
+
 ### What are cloud service models?
+![Cloud models](img/azure-service-level-comparison.png)
 - **Infrastructure as a service (IaaS)**: A cloud provider keeps the hardware up to date, but operating system maintenance and
         network configuration is left to the cloud tenant
 - **Platform as a service (PaaS)**: The cloud provider manages the virtual machines and networking resources, and the cloud tenant
@@ -44,3 +46,4 @@ software, analytics, and intelligence
 - **Software as a service (SaaS)**: The cloud provider manages all aspects of the application environment, such as virtual machines,
         networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the
         application managed by the cloud provider
+
