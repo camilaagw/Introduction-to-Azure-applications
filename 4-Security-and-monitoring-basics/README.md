@@ -8,7 +8,7 @@ This lesson focuses on:
 
 ##  Security responsibilities: cloud developers and cloud provider
 
-![Azure security responsabilities](img/azure-security-responsabilities.png)
+![Azure security responsibilities](img/azure-security-responsibilities.png)
 - IaaS: The security of physical hardware shifts to the cloud provider
 - PaaS: The operating system security shifts to be the responsibility of the cloud provider, while network,
  application and identity security are a shared responsibility.
