@@ -30,7 +30,7 @@ Note that Azure SQL databases do not have a free tier option.
 
 ## Blob Storage
 Blob storage is done inside **Azure Storage Accounts**. An Azure storage account:
-- Can hold Files or Blobs
+- Can hold Files, disks, or Blobs
 - Provides a unique namespace in Azure for your data
 - Can contain multiple containers within them to organize different files
 - Offer different storage tiers:
@@ -41,6 +41,15 @@ Blob storage is done inside **Azure Storage Accounts**. An Azure storage account
 - Offer a rule-based policy  to transition your data between these tiers
 
 __Blob (Binary Large Object): Data type that can store unstructured (binary) data. Generally used to store images or videos.__
+
+Blob Storage is ideal for:
+
+- Serving images or documents directly to a browser.
+- Storing files for distributed access.
+- Streaming video and audio.
+- Storing data for backup and restore, disaster recovery, and archiving.
+- Storing data for analysis by an on-premises or Azure-hosted service.
+- Storing up to 8 TB of data for virtual machines
 
 ## Azure CosmosDB
 Azure's non-relational database service, capable of using different non-relational databases like MongoDB and Cassandra.
