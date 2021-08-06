@@ -18,6 +18,7 @@ az storage container create \
  --auth-mode login \
  --public-access container
 ```
+Note: `--auth-mode login` might cause an error in some cases
 
 ## Uploading files
 Files can be uploaded directly from the Azure Portal or by connecting the storage account to an app.
