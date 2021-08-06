@@ -24,6 +24,15 @@ To complete the exercise:
 8. While you wait for the storage account to begin receiving logs and the alert to activate, go to the "Quotas" section under "App Service plan" in your app. Take note of the limits, which especially on the free tier are fairly low. If your app exceeds these limits, it will be stopped until the next reset, unless you scale up your app (outside the scope of this course). It's important to note here that all of these quota limitations are available for setting alerts - take a few minutes to consider what type of alerts you might consider setting to become aware of a potential upcoming quota issue.
 9. If it's been 10 minutes, go back to your app website and make sure to hit each of the buttons a few times to create additional logs and potentially activate an email alert. Then, go check if your storage container appropriately contains the logs, and if you have received an email alert.
 
+
+## Add the redirect and logout URIs in Azure AD
+
+Within your registered app, under "Manage", click on "Authentication", then "+Add a platform".
+Select "Web" under "Web applications" in the new window.
+Enter https://localhost:5555/getAToken in the redirect URI (replace /getAToken with your own REDIRECT_PATH).
+Enter https://localhost:5555/login in the logout URI - we want the user to be redirected back to the login page of this app when they logout. Other apps could potentially just redirect back to a homepage (our homepage is hidden behind the login process).
+Click Configure.
+
 ## Bonus: Considering quotas
 
 - Navigate back to your App Service, and find the "App Service plan" header, then click on "Quotas".
