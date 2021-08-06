@@ -1,5 +1,6 @@
 # Lesson 2: Azure compute services
 Azure uses a hierarchical system to keep resources organized and to manage expenses:
+![Hierarchy](img/subscription-resource-group-hierarchy.png)
 1. Azure Account
 2. Subscription level: Used for billing. There can be multiple per account (i.e. one for development and testing, and another for production systems)
 2. Resource Groups (tied to a region)
@@ -27,7 +28,10 @@ A PaaS option allowing developers to focus more on their apps than the underlyin
 - While they are good for scaling, there is also a limit of up to 14 GB or 4 CPU cores on the highest tier.
 
 ## What are their use cases?
-- Virtual Machines are usually better when you need control of the underlying operating system or are using custom software to support your needs
+- Virtual Machines are usually better when you:
+    - Need control of the underlying operating system
+    - Are using custom software to support your needs
+    - Use custom hosting configurations
 - An app service is typically better for lightweight applications and services, especially when you don't have the need for high performance compute services.
 
 ## How to choose a region for a compute service?
@@ -36,3 +40,5 @@ There are three criteria:
 - Performance - Latency determines network service performance; are you creating resources for yourself or your end user?
 - Cost - Costs of services vary by region. If latency isn’t an issue, you might want to deploy your services in the cheapest region. 
 
+
+https://www.notion.so/Errors-in-Course-Contents-edbbfc3bdca24375aec02ce02b5c989e
