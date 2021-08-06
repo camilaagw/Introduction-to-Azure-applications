@@ -47,4 +47,20 @@ within an organization.
     Together, the above four steps should allow you to have a functional "Sign in with Microsoft" button with the Microsoft Authentication Library, as well as to log back out of the related Microsoft account.
 4. Test your app out in localhost (making sure to use `https`), or feel free to deploy the app as well.
 
-Note: A Tenant is ypically equivalent to an organization in Azure AD, although you can set up additional tenants as necessary.
+Note 1: Environment setup:
+
+    ```
+    python -m venv venv
+    venv\Scripts\activate.bat
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    python application.py
+    ```
+
+Note 2: A Tenant is typically equivalent to an organization in Azure AD, although you can set up additional tenants as necessary.
+
+
+If you run it locally it has to be https://localhost:5555/getAToken.
+If it's an app service it has to be https://your_app_service.azurewebsites.net/getAToken
+"your_app_service" is the name of your app service.
+You also have to define /getAToken as your REDIRECT_PATH in config.py.
