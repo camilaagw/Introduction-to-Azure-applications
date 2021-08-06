@@ -119,3 +119,27 @@ Type "exit" to disconnect from the VM.
 ```markdown
 az group delete -n resource-group-west
 ```
+
+## Trouble shooting
+When listing the current network security group rules, the web server is not accessible: To find out why, let's examine your current NSG rules.
+
+Run the following az network nsg list command to list the network security groups that are associated with your VM:
+
+
+```
+az network nsg list \
+  --resource-group learn-c20f2e0a-199d-47dd-be60-3483cfbb50ff \
+  --query '[].name' \
+  --output tsv
+```
+Every VM on Azure is associated with at least one network security group: https://docs.microsoft.com/en-gb/learn/modules/secure-network-connectivity-azure/6-configure-access-network-security-group
+
+```
+az network nsg rule list \
+  --resource-group learn-c20f2e0a-199d-47dd-be60-3483cfbb50ff \
+  --nsg-name my-vmNSG \
+  --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
+  --output table
+```
+
+By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
